@@ -1,0 +1,26 @@
+{
+  "name": "sallve-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "material-design-icons": "^3.0.1",
+    "material-icons": "^0.5.3",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.11.16",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

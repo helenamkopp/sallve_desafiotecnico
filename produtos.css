@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body .pagina-geral{
+  background: white;
+  max-width: 940px;
+  margin: 36px 230px 0 230px;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  margin-bottom: 50px;
+  width: 100%;
+}
+header img {
+  height: 43px;
+  width: 43px;
+}
+header a {
+  text-decoration: underline;
+  color: black;
+  font-size: 16px; 
+}
+#sobre {
+  margin-right: 30px;
+  margin-left: 122.4px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-content .productName {
+  margin-top: 20px;
+  width: 249px;
+  height: 21px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
+}
+.card-content .price {
+  font-size: 15px;
+  color: #111111;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.card-content .buyButton {
+  background-color: #d8ff6e;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background, 0.5s;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.card-content .buyButton:hover {
+  background-color: hotpink;
+  
+
+}
+.footer {
+  height: 62px;
+  width: 1400px;
+  background-color: #EEEEEE;
+  font-family: 'Lato', sans-serif;
+  margin-top: 50px;
+}
+.footer-content {
+  position: absolute;
+  height: 16px;
+  width: 267px;
+  font-size: 14px;
+  color: #999999;
+  margin: 23px 567px;
+}
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay .modal {
+  background-color: white;
+  border-radius: 16px;
+  width: 660px;
+  height: 360px;
+  margin: 15vh auto;
+  position: relative;
+}
+.modal-overlay .modal .close-modal {
+  color:#999999;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+.modal-overlay .modal .modal-content img{
+  margin: 30px 30px 20px 30px;
+  border-radius: 15px;
+  height: 200px;
+  width: 600px;
+}
+.modal-overlay .modal .modal-content p {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.modal-overlay .modal .modal-content p.price {
+  font-size: 18px;
+  color: #777777;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
